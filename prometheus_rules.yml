@@ -1,0 +1,10 @@
+groups:
+- name: example
+  rules:
+  - alert: BackendDown
+    expr: up{job="backend"} == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Backend is down"

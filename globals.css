@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small center layout helper */
+body { background: white; }
+.dark body { background: #0f172a; color: #cbd5e1; }
